@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clipToPadding="true"
+    android:elevation="8dp"
+    app:cardBackgroundColor="@color/dark_grey"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toStartOf="@id/deleteButton"
+            android:padding="4dp"
+            android:text="Note Title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/itemTimeStamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitle"
+            android:layout_margin="4dp"
+            android:layout_toStartOf="@id/deleteButton"
+            android:padding="4dp"
+            android:text="TimeStamp"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
